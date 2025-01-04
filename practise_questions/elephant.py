@@ -1,5 +1,4 @@
+import math
 num = int(input())
-
-steps = (num / 5).__ceil__()
-
+steps = math.ceil(num/5)
 print(steps)
