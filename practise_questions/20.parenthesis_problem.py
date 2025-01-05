@@ -34,22 +34,11 @@ for i in range(1,len(s)):
     if st and (st[-1]=="(" and s[i]==")" or st[-1]=="[" and s[i]=="]" or st[-1]=="{" and s[i]=="}"):
         st.pop()     
     else:   
-        st.append(s[i])
-    # if s[i-1]=="[" and s[i]=="]":
-    #     st.pop()
-    # else:
-    #     st.append(s[i])
-    # if s[i-1]=="{" and s[i]=="}":
-    #     st.pop()
-    # else:
-    #     st.append(s[i])
-
-print(st)
-    
-# if st==[]:
-#     print("pass")
-# else:
-#     print("fail")
+        st.append(s[i])   
+if st==[]:
+    print("pass")
+else:
+    print("fail")
 
 
 
